@@ -19,12 +19,12 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">Download the App</a>
-            <a class="nav-item nav-link active" href="#">Locations</a>
-            <a class="nav-item nav-link" href="#">Share Your Photos</a>
-            <a class="nav-item nav-link" href="#">About</a>
-            <a class="nav-item nav-link" href="#">Contact</a>
+            <a class="nav-item nav-link " href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="download.html">Download the App</a>
+            <a class="nav-item nav-link active" href="locations.html">Locations</a>
+            <a class="nav-item nav-link" href="share.html">Share Your Photos</a>
+            <a class="nav-item nav-link" href="about.html">About</a>
+            <a class="nav-item nav-link" href="contact.html">Contact</a>
           </div>
         </div>
     </div>
@@ -56,7 +56,7 @@ xxxx
 
 <script>
 var Airtable = require('airtable');
-var base = new Airtable({apiKey: 'keywFXqMuBxcEi0mP'}).base('appRQ5pfghePoLlp5');
+var base = new Airtable({apiKey: 'xxx'}).base('appRQ5pfghePoLlp5');
 
 base('APP Database').select({
     view: 'Grid view'
