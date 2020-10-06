@@ -36,7 +36,7 @@
             <h1>Locations</h1>
 
            The app was designed to be used while you go on a bike tour across the Grove. I can be done in one day or many days.
-            The locations included in the app where picked with the intention to give you an insiders tour of Coconut Grove. 
+            The locations included in the app where picked with the intention to give you an insiders tour of Coconut Grove.
             Expert curated by longtime residents, historians, professors and current Grovites. This app will show you the Grove you never knew existed!
             <br><br>
           <h2>Grove locations you'll discover!</h2>
@@ -154,45 +154,9 @@ Woodsong
 
 
 <footer>
-  For more information contact <a href="mailto:grinfeder@miami.edu">Kim Grinfeder</a> &copy; 2020 Grin's LLC - <a href="privacy.html">Privacy Policy</a>
+  <a href="privacy.html">Privacy Policy</a>
 </footer>
 
-<script>
-var Airtable = require('airtable');
-var base = new Airtable({apiKey: 'xxx'}).base('appRQ5pfghePoLlp5');
-
-base('APP Database').select({
-    view: 'Grid view'
-}).firstPage(function(err, records) {
-    if (err) { console.error(err); return; }
-    records.forEach(function(record) {
-      if(record.get("Active") == "True"){
-        
-        // console.log('Name: ', record.get('Name'));
-        // console.log('Text: ', record.get('Text'));
-        // console.log('Address: ', record.get('Address'));
-
-        var location = {
-          name: record.get('Name'),
-          text: record.get('Text'),
-          address: record.get('Address')
-        }
-
-        var element = document.createElement('section')
-        element.innerHTML = `
-          <div class="content">
-            <p>${location.name}</p>
-          </div>
-        `
-        console.log(element);
-        document.getElementById('locations').appendChild(element);
-        
-          
-      }
-        
-    });
-});
-</script>
 
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
