@@ -5,6 +5,15 @@
         },
         {
             "path": "..\\..\\techb\\tech-b"
+        },
+        {
+            "path": "..\\..\\..\\..\\..\\..\\xampp\\htdocs"
+        },
+        {
+            "path": "..\\..\\..\\..\\..\\..\\xampp\\htdocs\\mapbox"
+        },
+        {
+            "path": "..\\..\\..\\..\\Desktop\\Weather-Trial-master"
         }
     ]
 }
